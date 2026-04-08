@@ -1,6 +1,6 @@
 ## HTML is ugly
 
-See [] if it's unclear why. This is just the natural result of forcing an XML-based text markup language to be a whole layout engine along with being backwards compatible for over 20 years; not to mention being able to contain the full logic of a Web page.
+See [here](specs/why-html-is-ugly.md) if it's unclear why. This is just the natural result of forcing an XML-based text markup language to be a whole layout engine along with being backwards compatible for over 20 years; not to mention being able to contain the full logic of a Web page. HTML is still very useful, and nowhere near as bad as it could be! But something designed with the current state of the Web (and also system application UI, too) in mind will naturally be more tuned to the needs of developers, users, and readers
 
 ## CSS is ugly
 
@@ -15,7 +15,7 @@ Hopefully you need no convincing of this fact. If not, I assume you are not real
 
 ## Introducing GML
 
-#### What we need is a clean, efficient, well-designed layout / language suite for the web
+#### What we need is a clean, efficient, well-designed layout / language suite for the Web
 
 We like hide this messiness behind framework after framework, but a system is only as reliable as its foundation, and a simple, solid base would make everything built atop it much more manageable.
 
@@ -106,3 +106,13 @@ canvas-title {
 }
 
 ```
+
+And that's all there is to it!
+
+## What is this all for?
+
+Fun! This project is there to fulfill the human desire to make things clean, simple, and efficient, and who knows? Maybe find some sort of practical application someday, if it ever ends up with enough features to be useful.
+
+## Can I help out?
+
+Do you wanna obsess over the little details? Do you have some problems with Web design? Do you know a lot about Web design that would fill in the knowledge gaps of the current contributors to this spec and make the GML suite much more relevant to people like you? Do you like Markdown somewhat? The answer may be yes! Click on this link to check out our presentation for newcomers: https://www.youtube.com/watch?v=dQw4w9WgXcQ .

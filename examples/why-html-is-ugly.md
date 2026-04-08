@@ -8,9 +8,9 @@ This seems redundant. Why tell that a file is HTML when its extension is .html a
 
 >The main reasons for using DOCTYPE are −
 >
->    Browser Rendering Mode Control − DOCTYPE determines which rendering mode the browser uses. Without it, browsers enter "quirks mode" to maintain backward compatibility with old, non-standard websites. With a proper DOCTYPE, browsers use "standards mode" for consistent, predictable rendering.
+>    Browser Rendering Mode Control − DOCTYPE determines which rendering mode the browser uses. Without it, browsers enter "quirks mode" to maintain backward compatibility with old, non-standard Websites. With a proper DOCTYPE, browsers use "standards mode" for consistent, predictable rendering.
 >
->    HTML Validation − Markup validators use the DOCTYPE to check document syntax and structure against specific HTML rules. This helps identify coding errors and ensures compliance with web standards.
+>    HTML Validation − Markup validators use the DOCTYPE to check document syntax and structure against specific HTML rules. This helps identify coding errors and ensures compliance with Web standards.
 >
 >    Cross-Browser Compatibility − A proper DOCTYPE ensures consistent rendering behavior across different browsers and versions, reducing layout discrepancies and display issues.
 
@@ -87,4 +87,4 @@ In HTML, you can search for things, apply styles to things, and identify things 
 </html>
 ```
 
-This is just the natural product of making a text layout document have to be backwards compatible through TODO years of web development by adding on bandages until you're left with a confusing mess. This is why we build frameworks upon frameworks to abstract away the HTML, when really the HTML should be designed better in the first place.
+This is just the natural product of making a text layout document have to be backwards compatible through TODO years of Web development by adding on bandages until you're left with a confusing mess. This is why we build frameworks upon frameworks to abstract away the HTML, when really the HTML should be designed better in the first place.

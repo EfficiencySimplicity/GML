@@ -141,7 +141,7 @@ Into this:
 }
 ```
 
-Note that the best way to do this in HTML is to either use autofill or, if you own the domain, make the URL point to the new image, but that may result in a naming discrepancy between the URL and what it actually points too, for example https://example.com/blue-button being changed to point to a red button (although that is pretty much your fault hard-coding the button's color into the URL, better to have it greyscale and change the color via styles)
+Note that the best way to do this in HTML is to either use autofill or, if you own the domain, make the URL point to the new image, but that may result in a naming discrepancy between the URL and what it actually points too, for example ```https://example.com/blue-button``` being changed to point to a red button (although that is pretty much your fault hard-coding the button's color into the URL, better to have it greyscale and change the color via styles)
 
 Names also allow for dynamic replacement of default assets with larger files; naming two fields the same name will cause the later-loading field to replace the earlier-loading field.
 

@@ -1,5 +1,6 @@
 Simple is better
 Less is more
+Readability matters
 
 Humans make decisions
 Machines follow directions
