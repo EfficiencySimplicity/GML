@@ -1,0 +1,24 @@
+// We load a loading page first
+https://example.com/loading-page
+
+// This block loads second
+{
+    // We here load some basic assets
+    https://example.com/page-source
+    style: https://example.com/basic-style
+    font: https://example.com/basic-font
+}
+
+// Third, we load whatever localized profile image is faster
+profile-image: (
+    https://example.com.uk/profile-image
+    https://example.com.us/profile-image
+    https://example.com.ch/profile-image
+)
+
+// Finally, we load a better font and style
+[
+    // These fields replace the old font and style fields
+    font: https://example.com/better-font
+    style: https://example.com/better-style
+]
