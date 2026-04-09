@@ -61,7 +61,7 @@ page {
 }
 
 ```
-([spec page for GML](/specs/gml/syntax.md))
+([spec page for GML](/specs/gml/basics.md))
 
 The loading of assets is handled by GMLOAD, with extensive control over order and priority:
 
@@ -92,7 +92,7 @@ profile-image: (
     style: https://example.com/better-style
 ]
 ```
-([spec page for GMLOAD](/specs/gmload/syntax.md))
+([spec page for GMLOAD](/specs/gmload/basics.md))
 
 The styling is managed by the (elegantly designed!) (self-referential!) (immensely powerful!) GATTR language:
 
@@ -108,7 +108,7 @@ canvas-title {
 }
 
 ```
-([spec page for GATTR](/specs/gattr/syntax.md))
+([spec page for GATTR](/specs/gattr/basics.md))
 
 And that's all there is to it!
 
