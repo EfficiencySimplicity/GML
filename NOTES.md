@@ -40,4 +40,4 @@
 
         But if we're embedding, we can only do that by making the embed the whole content; and there's no need to do padding or anything; if the element's got no blocks inside, it ain't a grid, just a single cell. Does mean we've got a conceptual wasted layer of nesting, but that's ok.
     
-
+- Imagine a blur style, this wouldn't be recursive (or extra blur on children), but all the layers compile to a single one in-shader which then has blur on it. This has promise...

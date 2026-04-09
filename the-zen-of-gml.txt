@@ -11,3 +11,4 @@ Move slow and improve things
 A tool is best when you don't need to use it
 
 An ounce of good design saves a ~ton~ of bug fixing
+Efficiency! Simplicity! Flexibility!
