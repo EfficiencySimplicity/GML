@@ -1,39 +1,8 @@
 # GMLOAD syntax
 
-.gmload files are plain-text files that specify the loading of assets for a Web page. 
+.gmload files are plain-text files that specify the loading of assets for a Web page. The syntax lets you control the order of loading and activation of assets, along with preloading assets and dynamic replacement of assets with different ones as the page loads. 
 
-.gmload files consist of definition statements and blocks of definition statements.
-
-.gmload files load blocks and statements from the top-down, synchronously. Blocks define different loading behaviors within them.
-
-Full example of a .gmload file:
-
-```
-// We load a loading page first
-https://example.com/loading-page
-
-// This block loads second
-{
-    // We here load some basic assets
-    https://example.com/page-source
-    style: https://example.com/basic-style
-    font: https://example.com/basic-font
-}
-
-// Third, we load whatever localized profile image is faster
-profile-image: (
-    https://example.com.uk/profile-image
-    https://example.com.us/profile-image
-    https://example.com.ch/profile-image
-)
-
-// Finally, we load a better font and style
-[
-    // These fields replace the old font and style fields
-    font: https://example.com/better-font
-    style: https://example.com/better-style
-]
-```
+.gmload files consist of definition statements and blocks of definition statements. Blocks and statements load from the top-down, synchronously. Blocks define different loading patterns within them.
 
 ## Blocks
 
@@ -161,3 +130,32 @@ Names also allow for dynamic replacement of default assets with larger files; na
 Names are always optional, except in the case of parenthesis blocks, which must have a name applied to them
 
 Names aren't affected by nesting; all that matters is the order things load in.
+
+Full example of a .gmload file:
+
+```
+// We load a loading page first
+https://example.com/loading-page
+
+// This block loads second
+{
+    // We here load some basic assets
+    https://example.com/page-source
+    style: https://example.com/basic-style
+    font: https://example.com/basic-font
+}
+
+// Third, we load whatever localized profile image is faster
+profile-image: (
+    https://example.com.uk/profile-image
+    https://example.com.us/profile-image
+    https://example.com.ch/profile-image
+)
+
+// Finally, we load a better font and style
+[
+    // These fields replace the old font and style fields
+    font: https://example.com/better-font
+    style: https://example.com/better-style
+]
+```

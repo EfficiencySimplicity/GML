@@ -1,0 +1,4 @@
+// any element named order-card will be given this style
+order-card {
+    // style goes here
+}

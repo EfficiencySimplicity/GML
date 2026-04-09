@@ -1,0 +1,9 @@
+// any element named post will get the basic-drop-shadow style
+post {
+    basic-drop-shadow;
+}
+
+// the basic-drop-shadow style references the drop-shadow style
+(basic-drop-shadow) {
+    drop-shadow("5px");
+}

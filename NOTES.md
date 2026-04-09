@@ -1,0 +1,2 @@
+- If we reference/call styles within styles, how and what are name-styles working? Can we reference a name style, like for 'post' in other styles?
+    - We need a standard for these things, is it 'referencing' or 'calling'? are they 'styles' or 'attributes'?

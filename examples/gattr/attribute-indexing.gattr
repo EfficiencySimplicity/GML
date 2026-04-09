@@ -1,0 +1,4 @@
+// any element with the card attribute will be given this style
+(card) {
+    // style goes here
+}
