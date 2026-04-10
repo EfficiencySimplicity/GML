@@ -1,12 +1,14 @@
 ## HTML is ugly
 
-See [here](specs/why-html-is-ugly.md) if it's unclear why. This is just the natural result of forcing an XML-based text markup language to be a whole layout engine along with being backwards compatible for over 20 years; not to mention having to be the sole backbone of a Web page. HTML is still very useful, and nowhere near as bad as it could be! But something designed with the current state of the Web (and also system application UI, too) in mind will naturally be more tuned to the needs of developers, users, and readers
+See [here](examples/why-html-is-ugly.md) if it's unclear why. This is just the natural result of forcing an XML-based text markup language to be a whole layout engine along with being backwards compatible for over 20 years; not to mention having to be the sole backbone of a Web page. HTML is still very useful, and nowhere near as bad as it could be! But something designed with the current state of the Web (and also system application UI, too) in mind will naturally be more tuned to the needs of developers, users, and readers
 
 ## CSS is ugly
 
 Not what you can make with it, there are a lot of things you can make with it! (Check out [CSS Zen Garden](https://csszengarden.com/pages/alldesigns/) if you wanna see some fantastic creations)
 
-It's the *syntax* that's ugly, confusing to beginners, and again, forced to be backwards-compatible over 20 years. You have flexboxes and grids, justify- and align- self-, content- and items- (what's the difference between content and items?). You have parents changing the child's size and children changing the parent's size; even so much that the simple act of centering a div has become a famous roadblock.
+It's the *syntax* that's ugly, confusing to beginners, and again, forced to be backwards-compatible over 20 years.
+
+You have flexboxes and grids, justify- and align- self-, content- and items- (what's the difference between content and items?). You have parents changing the child's size and children changing the parent's size; even so much that the simple act of centering a div has become a famous roadblock. Plus, different browsers support different feature sets, so sites do not work the same across various browsers.
 
 ## JavaScript is ugly
 

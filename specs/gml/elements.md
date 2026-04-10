@@ -1,4 +1,4 @@
-## Elements
+# GML elements
 
 A GML element consists of a name, attributes, and a set of braces:
 

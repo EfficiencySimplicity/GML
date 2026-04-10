@@ -2,7 +2,7 @@
 
 Here we go through, one by one, the features of HTML and why they are inelegant.
 
-### Each document starts out with ```<!DOCTYPE html>```.
+## Each document starts out with ```<!DOCTYPE html>```.
 
 This seems redundant. Why tell that a file is HTML when its extension is .html and you expect .html? Why not include it as metadata, if anything? [This article](https://www.tutorialspoint.com/article/Why-do-we-use-DOCTYPES-in-HTML-document) describes its use thus:
 
@@ -16,11 +16,11 @@ This seems redundant. Why tell that a file is HTML when its extension is .html a
 
 Backwards compatibility, syntax checkers, and somehow making it cross-compatible? All good uses, but not the best way to define the document type.
 
-### Comments
+## Comments
 
 Instead of the basic double-slash (//), HTML uses this mess: ```<!-- -->```. This is seven entire characters long. The absence of a double-slash may have been used to make it easier to write ```http://```, which is a valid decision, but a better alternative could have been chosen. Even a <! comment-goes-here> tag would have taken less characters along with being on-style with XML, no need for the hyphenation.
 
-### Tags
+## Tags
 
 In HTML, some tags have beginning and ending points (```<p></p>```) and some just have a single clause (```<input>```). This distinction tells you what tags can contain text content or not, a useful method. This does come with some problems, though.
 
@@ -30,61 +30,24 @@ Additionally, this causes issues with tags given multiple uses. For example, the
 
 And to fix the problem of needing to load after the HTML, the defer flag was added. Also there's an async flag, for if you need it to load async instead.
 
-### Indexing
+## Indexing
 
 In HTML, you can search for things, apply styles to things, and identify things using either the element's type, the id attribute, or the class attribute. This is a pretty solid system, but GML does it better. The types really just make it more readable mostly; a ```<nav>``` is just a ```<div>``` with a specific name. Only some specific tags do special things, such as ```<form>``` or ```<style>```. (also, the text types have some different styling than normal divs, and of course the browser can specify different styles for specific element types)
 
+## Shortcuts
 
+HTML was designed to be easy, which includes adding shortcuts in many places. These shortcuts certainly do make things quicker, but encourage lazy design. Think lazy- versus strict- typing. Lazy typing is faster but if you're making anything that will have a practical use, anything that needs to be reliable, you need a solid foundation you can trust.
 
+Some shortcuts in HTML include:
 
+- Styling
+    - Styles can be applied via a stylesheet, which itself can be defined in 2 ways:
+        - As an external file, linked to via the ```<link>``` tag
+        - Via a hard-coded stylesheet built in to the HTML
+    - Alternatively, styles can be applied directly to an element:
+        ```<div width="50%" color = red>...</div>```
 
+- Scripts
+    - Same as styles, scripts in html can be hard-coded (via the ```<script>``` tag), or linked to externally. The script tag is also, oddly enough, used to link to external scripts instead of using the ```<link>``` tag. This means its functionality is partway between an element and a tag.
 
-
-
-
-```html
-<!DOCTYPE html> // What does this even do?! The extension says .html!
-// Plus, these aren't even HTML comments; those look like:
-<!-- This weird and excessive syntax; 7 characters to define them -->
-
-// Because we need to tell where the html is, as you can also
-// embed css and JS into the document in more than one way; either referencing a 
-// dedicated file or being lazy and just writing CSS/JS straight in the HTML file.
-<html>// an excessive syntax again, patterned after XML, 
-    // but good for looking at the end and telling what type of div it is
-
-    // Metadata about the page goes in here; makes sense
-    <head>
-        <title>Ugly Html Document</script>
-        // https://www.w3schools.com/tags/tag_head.asp
-        <base href="https://www.w3schools.com/" target="_blank">
-        // why put specific types of metadata inside a meta tag? Shouldn't these 
-        // all be different tags?
-        // For that matter, why have this in a tag, like a standard div? It seems
-        // a bit confusing; these shouldn't be DOM elements.
-        // Also tags vs normal <element></element>; why make a distinction?
-        // Tags only difference is that they can contain no content; they shouldn't be
-        // written the same as DOM elements.
-        // Also, this content field really should be built in, there's no reason not to.
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        // Two different ways to import files; because we HAD to make the script tag
-        // hold content and also import files, functioning like a tag AND a DOM element.
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src = "main.js"></script>
-        // By the way, to make a script tag wait 'till the HTML loads to activate, you add defer,
-        // which won't work for inline scripts, which must use a JS loader.
-
-        <noscript> Ah, for when the browser doesn't support JS; again styled like a DOM element</noscript>
-    </head>
-
-    <body>// This automatically has padding, and doesn't tell you about it
-
-
-
-    </body>
-
-</html>
-```
-
-This is just the natural product of making a text layout document have to be backwards compatible through TODO years of Web development by adding on bandages until you're left with a confusing mess. This is why we build frameworks upon frameworks to abstract away the HTML, when really the HTML should be designed better in the first place.
+    

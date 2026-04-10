@@ -1,4 +1,4 @@
-# Multiple styles in GATTR
+# GATTR abstraction
 
 In CSS, we can give multiple tag names / ids the same style using this syntax:
 
