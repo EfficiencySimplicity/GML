@@ -19,4 +19,4 @@ GML syntax follows a basic JSON-similar format, with elements defined by a name,
         github-link (link("https://github.com/EfficiencySimplicity)) {"Click here to visit my Github?"}
     }
 
-GML files are meant to be fit into a box. If that box is the window of your browser, you have a Web page. If that box is a cell in a GML grid, you have a component. This means componentalization is a built-in feature of GML. BOOYAH
+GML files are meant to be fit into a box. If that box is the window of your browser, you have a Web page. If that box is a cell in a GML grid, you have a component. This means componentalization is a built-in feature of GML. BOOYAH. You can thus avoid heavy nesting by separating the components of your site into separate files.

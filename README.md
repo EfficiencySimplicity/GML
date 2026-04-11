@@ -29,87 +29,86 @@ The entire design, logic, and implementation of GML is entirely written by human
 
 #### GML is focused on extensive features, modularity, abstraction, funny comments, writing itself in itself, and above all, simplicity.
 
+**The benefits of GML include**:
+- a built in component system
+- an incredibly simple syntax
+- a simple but immensely powerful attribute system
+- extensive control over asset loading
+
 GML syntax is straightforward:
 
-```
-page {
+    page {
 
-    // This is a comment, in case you weren't sure
-    navigation-menu (border-color(red)) {
-        menu-option (link(https://example.com/home)) {"Home"}
-        menu-option (link(https://www.purelyhuman.xyz/artists/JoshuaWard)) {"Art"}
-        menu-option (link(https://example.com/store)) {"Store"}
-        menu-option (link(https://example.com/games)) {"Games"}
-        menu-option (link(https://example.com/about)) {"About"}
+        // This is a comment, in case you weren't sure
+        navigation-menu (border-color(red)) {
+            menu-option (link(https://example.com/home)) {"Home"}
+            menu-option (link(https://www.purelyhuman.xyz/artists/JoshuaWard)) {"Art"}
+            menu-option (link(https://example.com/store)) {"Store"}
+            menu-option (link(https://example.com/games)) {"Games"}
+            menu-option (link(https://example.com/about)) {"About"}
+        }
+
+        /*
+            This is the comment that never ends,
+            yes it goes on and on my friends,
+            you poor fool started reading it,
+            not knowing what it was,
+            and you will keep on reading it
+            forever just because
+        */
+
+        content {
+
+            canvas-title {"Draw on the canvas!"}
+            canvas (main-canvas) {}
+            subtitle {"Copyright 1995 BananaHead Systems, Ltd.}
+
+        }
+
     }
-
-    /*
-        This is the comment that never ends,
-        yes it goes on and on my friends,
-        you poor fool started reading it,
-        not knowing what it was,
-        and you will keep on reading it
-        forever just because
-    */
-
-    content {
-
-        canvas-title {"Draw on the canvas!"}
-        canvas (main-canvas) {}
-        subtitle {"Copyright 1995 BananaHead Systems, Ltd.}
-
-    }
-
-}
-
-```
 ([spec page for GML](/specs/gml/basics.md))
 
 The loading of assets is handled by GMLOAD, with extensive control over order and priority:
 
 [ref]: examples/gmload/full-example.gmload
-```
-// We load a loading page first
-https://example.com/loading-page
 
-// This block loads second
-{
-    // We here load some basic assets
-    https://example.com/page-source
-    style: https://example.com/basic-style
-    font: https://example.com/basic-font
-}
+    // We load a loading page first
+    https://example.com/loading-page
 
-// Third, we load whatever localized profile image is faster
-profile-image: (
-    https://example.com.uk/profile-image
-    https://example.com.us/profile-image
-    https://example.com.ch/profile-image
-)
+    // This block loads second
+    {
+        // We here load some basic assets
+        https://example.com/page-source
+        style: https://example.com/basic-style
+        font: https://example.com/basic-font
+    }
 
-// Finally, we load a better font and style
-[
-    // These fields replace the old font and style fields
-    font: https://example.com/better-font
-    style: https://example.com/better-style
-]
-```
+    // Third, we load whatever localized profile image is faster
+    profile-image: (
+        https://example.com.uk/profile-image
+        https://example.com.us/profile-image
+        https://example.com.ch/profile-image
+    )
+
+    // Finally, we load a better font and style
+    [
+        // These fields replace the old font and style fields
+        font: https://example.com/better-font
+        style: https://example.com/better-style
+    ]
 ([spec page for GMLOAD](/specs/gmload/basics.md))
 
-The styling is managed by the (elegantly designed!) (self-referential!) (immensely powerful!) GATTR language:
+The styling is managed by the (elegantly designed!) (self-referential!) (modular!) (immensely powerful!) GATTR language:
 
-```
-(menu-option) {
-    border-color(red);
-    color(blue);
-}
+    (menu-option) {
+        border-color(red);
+        color(blue);
+    }
 
-canvas-title {
-    title();
-    color(red);
-}
-
-```
+    canvas-title {
+        title();
+        color(red);
+    }
 ([spec page for GATTR](/specs/gattr/basics.md))
 
 And that's all there is to it!
