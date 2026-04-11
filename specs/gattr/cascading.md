@@ -10,15 +10,15 @@ To specify that a style applies recursively, you can use the # flag for now unti
 }
 ```
 
-Cascading is mostly only used for text, but in the name of simplicity and flexibility (and the no-special-cases theme of GML) any style is allowed to be cascading.
+Cascading is mostly only used for text-related styles, but in the name of simplicity and flexibility (and the no-special-cases theme of GML) any style is allowed to be cascading.
 
-Since styles are functions, any recursive style calls its whole internals on all the children, thus:
+Since styles are functions, any cascading style calls itself on any children of any element it's applied to, thus:
 
-- If a non-recursive style calls a recursive one (as will be the case most often), the recursive one gets called and evaluates on all children
-- If a non-recursive style calls another non-recursive one, the child style calls once on the selected element (of course if the child style contains a recursive one that gets called and recursively applied, etc etc etc)
-- Anything called by a recursive style gets called recursively, as even a non-recursive style will still be forcibly called by the parent style on each child.
+- If a non-cascading style calls a cascading one (as will be the case most often), the cascading one gets called and applies on all children
+- If a non-cascading style calls another non-cascading one, the child style is applied once on the selected element (of course if the child style contains a cascading style, than that gets called and recursively applied, etc etc etc)
+- Anything called by a cascading style gets called recursively, as even a non-cascading style will still be forcibly called by the parent style on each child.
 
-You can also specify substyles in this manner:
+You can also specify substyles (i.e. styles that depend on their relative position to other elements) in this manner:
 
 ```
 parent {
@@ -49,7 +49,7 @@ card {
 You can specify default styles for every element using the * keyword, same as in CSS:
 
 ```
-// The text is red on this site (probably a scam site)
+// The text is red by default on this site (probably a scam site)
 * {
     text-color("red");
 }

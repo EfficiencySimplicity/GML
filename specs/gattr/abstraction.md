@@ -1,6 +1,6 @@
 # GATTR abstraction
 
-In CSS, we can give multiple tag names / ids the same style using this syntax:
+In CSS, we can give multiple identifiers the same style using this syntax:
 
 ```css
 div nav .master-control .cheesecake #card #floating {
@@ -9,7 +9,7 @@ div nav .master-control .cheesecake #card #floating {
 }
 ```
 
-In GATTR, we opt to use a different approach. Since GATTR styles are basically functions, you can reference styles within other styles, thus eliminating the need for CSS's syntax choice.
+In GATTR, we opt to use a different approach. Since GATTR styles are basically functions, you can call styles within other styles, thus eliminating the need for CSS's syntax choice.
 
 Say we have a setup like this:
 
@@ -49,10 +49,10 @@ post {
 
 We want to follow the elegant standard of D.R.Y., and so this repetition of background- and border- colors must be abstracted away somehow.
 
-There are two different things we can do (but really only 1).
+**There are two different things we can do (but really only 1):**
 
-1. We can separate these features into their own separate style and give it to all the elements that use it
-2. We can separate these features into their own separate style and reference it in all these elements' styles
+1. We can separate these features into their own separate style and assign it to all the elements that use it
+2. We can separate these features into their own separate style and call it in all these elements' styles
 
 ### 1:
 

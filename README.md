@@ -113,6 +113,18 @@ The styling is managed by the (elegantly designed!) (self-referential!) (modular
 
 And that's all there is to it!
 
+... In case you were wondering, centering a div in GML is done in this way:
+
+    box (rows([; ; ;])) {
+        inner-box {}
+    }
+
+Or alternatively:
+
+    box (center) {
+        inner-box {}
+    }
+
 ## What is this all for?
 
 Fun! This project is there to fulfill the human desire to make things clean, simple, and efficient, and who knows? Maybe find some sort of practical application someday, if it ever ends up with enough features to be useful.
