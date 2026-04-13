@@ -61,7 +61,7 @@ Names are always optional, except in the case of parenthesis blocks, which must 
 
 Names aren't affected by nesting; all that matters is the order things load in.
 
-A few names have important meanings in GML. Any GML browser should supply defaults for these two names:
+A few names have important meanings in GML. Any GML browser should supply defaults for these two names (as for the ```source``` field, supplying a default page may cause flicker, the browser is allowed to do whatever as long as it supplies an explanation for when a user specifies no source at all, as opposed to not supplying one immediately):
 
 - ```source``` (for the page source; the default can be a basic "no-content-loaded: file)
 - ```font``` (browser- or user-agent- specified default font)
