@@ -1,6 +1,8 @@
 <!-- https://markdown.land/markdown-center -->
+<!-- The above didn't work in Github, so I took a leaf from Fyrox's README -->
+<!-- https://raw.githubusercontent.com/FyroxEngine/Fyrox/refs/heads/master/README.md -->
 <!-- One day all this styling will be GML... -->
-<div style="text-align: center;">
+<div align="center">
 
 <h1> GML </h1>
 
@@ -14,11 +16,11 @@ it's designed with the current state of the Web as a priority, instead of trying
 
 </div>
 
-<h2 style="text-align: center;"> HTML is a mess </h2>
+<h2 align="center"> HTML is a mess </h2>
 
 See [here](examples/why-html-is-ugly.md) if it's unclear why. This is just the natural result of forcing an XML-based text markup language to be a whole layout engine along with being backwards compatible for over 20 years; not to mention having to be the sole backbone of a Web page. HTML is still very useful, and nowhere near as bad as it could be! But something designed with the current state of the Web (and also system application UI, too) in mind will naturally be more tuned to the needs of developers, users, and readers.
 
-<h2 style="text-align: center;"> CSS is ugly </h2>
+<h2 align="center"> CSS is ugly </h2>
 
 Not what you can make with it, there are a lot of things you can make with it! (Check out [CSS Zen Garden](https://csszengarden.com/pages/alldesigns/) if you wanna see some fantastic creations)
 
@@ -26,12 +28,12 @@ It's the *syntax* that's ugly, confusing to beginners, and again, forced to be b
 
 You have flexboxes and grids, justify- and align- self-, content- and items- (what's the difference between content and items?). You have parents changing the child's size and children changing the parent's size; even so much that the simple act of centering a div has become a famous roadblock. Plus, different browsers support different feature sets, so sites do not work the same across various browsers.
 
-<h2 style="text-align: center;"> JavaScript </h2>
+<h2 align="center"> JavaScript </h2>
 
 No explanation necessary.
 
 
-<h2 style="text-align: center;"> Introducing GML </h2>
+<h2 align="center"> Introducing GML </h2>
 
 #### What we need is a clean, efficient, well-designed layout / language suite for the Web
 
@@ -143,11 +145,11 @@ Or alternatively:
         inner-box {}
     }
 
-<h2 style="text-align: center;"> What is this all for? </h2>
+<h2 align="center"> What is this all for? </h2>
 
 Fun! This project is there to fulfill the human desire to make things clean, simple, and efficient, and who knows? Maybe find some sort of practical application someday, if it ever ends up with enough features to be useful.
 
-<h2 style="text-align: center;"> Can I help out? </h2>
+<h2 align="center"> Can I help out? </h2>
 
 - Do you wanna obsess over the little details? Do you have some problems with Web design? 
 - Do you know a lot about Web design that would fill in the knowledge gaps of the current contributors to this spec and make the GML suite much more relevant to people like you? 
