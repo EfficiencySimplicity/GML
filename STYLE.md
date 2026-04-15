@@ -16,4 +16,6 @@ Be careful not to do a blind find-and-replace, there are examples, such as in ta
 
 Any Markdown file within this repo should (but not *must*, see this one for example (should this one be split into different Markdown files?)) have a one-octothorpe (#) title at the top, and double-octothorpe subheaders, including an optional ## Notes section at the end.
 
-Scripts linked to in /examples (as Markdown does not support embeds, as far as I know), when changed, must have all their references changed; i.e. do a search and replace 'em.
+Scripts should have their source in in /examples (as Markdown does not support embeds, as far as I know), and, when changed due to the syntax changing, must have all their references changed; i.e. do a search and replace 'em.
+
+Whenever you look something up, CITE YOUR SOURCE in a comments. AI is not a source. Don't use information until you know where it comes from.

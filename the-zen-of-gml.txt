@@ -1,6 +1,7 @@
 Simple is better
 Less is more
 Readability matters
+Code can be beautiful
 
 Humans make decisions
 Machines follow directions
@@ -12,3 +13,5 @@ A tool is best when you don't need to use it
 
 An ounce of good design saves a ~ton~ of bug fixing
 Efficiency! Simplicity! Flexibility!
+
+Strict is better than lazy

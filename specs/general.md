@@ -6,16 +6,11 @@ Languages in the GML suite are all encoded using a standard plain-text encoding.
 
 Whitespace (tabs, newlines, spaces), overall, does not affect anything and is ignored. This allows you to format files using whitespace to make them more visually appealing. [^2]
 
-Names in the GML suite consist of any Unicode letter character (a-z, A-Z, letters with diacritics, letters in other languages, numbers), along with the underscore (_) and dash (-) [^3]. Colons, slashes, etc other special characters are not valid in a name. The following are valid names:
+Names in the GML suite, for now, will be limited for the sake of ease. Valid names are only lowercase Latin letters with no diacritics, along with the dash (-) character. The dash-character cannot be the beginning or end of the name.
 
 - name
 - long-name
-- super_long-name
-- 9am3-w1th_9-u-M-BRZZZ
-- --stop_all_and_dance--
-- \__________
-
-However it is recommended to use kebab-case and refrain from using numbers.
+- super-long-name
 
 The basic structure of loading a GML page is as follows:
 

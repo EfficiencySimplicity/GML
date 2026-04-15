@@ -28,7 +28,7 @@ You have an idea? A feature maybe? A modification in the specs? Something else? 
 
 Writing code sure is fun, amirite?
 
-If you wanna write any sort of implementation of GML or anything related to it that should be official (unofficial things you can make yourself, just reference this repo in your repo), bring it up in the Discussions tab and it can be worked out. Just know that GML is founded on solid design, so any official code will be human written and planned out obsessively and in extreme detail.
+If you wanna write any sort of implementation of GML or anything related to it that should be official (unofficial things you can make yourself, just reference this repo in your repo), bring it up in the Discussions tab and it can be worked out. Just know that GML is founded on solid design, so any official code will be human written and planned out obsessively and in extreme detail. Plus check the [STYLE.md](/STYLE.md) file for basic rules and things.
 
 ## I have an improvement idea
 

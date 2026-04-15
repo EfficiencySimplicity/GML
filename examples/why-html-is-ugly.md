@@ -2,6 +2,12 @@
 
 Here we go through, one by one, the features of HTML and why they are inelegant.
 
+## The whole site is dependent on the layout document.
+
+In the end, the backbone of a site is an HTML file. You have a mess of metadata, links of all sorts to assets of all sorts, even embedded scripts and files all throughout the file, along with the layout, which can have other things embedded into it practically anywhere for the sake of convenience.
+
+The layout document should be for layout only.
+
 ## Each document starts out with ```<!DOCTYPE html>```.
 
 This seems redundant. Why tell that a file is HTML when its extension is .html and you expect .html? Why not include it as metadata, if anything? [This article](https://www.tutorialspoint.com/article/Why-do-we-use-DOCTYPES-in-HTML-document) describes its use thus:
