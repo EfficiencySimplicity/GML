@@ -15,10 +15,8 @@ Here is a demonstration of comments intersecting with statements:
 
     // Here is a simple single-line comment
                 // Here is a single-line comment with whitespace before and after   
-      name: https://example.com/data?id=2344324&data=5 /* Here is a multi-line comment. Note how the multi line comment has a space between it and the URL. This is mandatory as a URL must have whitespace between it and any semantic elements on the same line. Also notice the name field. This is a valid GML name as defined in the general spec. The colon doesn't have to touch it, but it's cleaner. Note also the indentation of the statement. This doesn't matter at all. It could have no indentation or a mile; it's just to make it look good. Now this comment will terminate before a statement; watch:
-    HERE IT ENDS*/ https://example.com/banner-image
-
-    // See above? no problem with ending that comment in the same line as a statement starts.
+      name: https://example.com/data?id=2344324&data=5 /* Here is a multi-line comment. Note how the multi line comment has a space between it and the URL. This is mandatory as a URL must have whitespace between it and any semantic elements on the same line. Also notice the name field. This is a valid GML name as defined in the general spec. The colon doesn't have to touch it, but it's cleaner. Note also the indentation of the statement. This doesn't matter at all. It could have no indentation or a mile; it's just to make it look good. Now this comment must'nt have anything on the same line it ends on, see? It's semantically equivalent to a single space, really, and so we do need a newline after it...*/ 
+      https://example.com/banner-image
 
     https://example.com/index // The spaces-around-URLs rule helps differentiate a single-line comment which uses a double-slash from the double-slash in the URL; otherwise the body of the URL would be counted as a comment.
 
